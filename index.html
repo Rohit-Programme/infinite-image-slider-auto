@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>infinity Auto image slider</title>
+	 <style type="text/css">
+    body{
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+
+    .slider{
+      height: 250px;
+      margin: auto;
+      position: relative;
+      width: 90%;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+
+    .slide-track{
+      display: flex;
+      width: calc(250px * 18);
+      animation: scroll 60s linear infinite;  
+    }
+
+    .slide-track:hover{
+      animation-play-state: paused;
+    }
+
+    @keyframes scroll{
+      0%{transform: translateX(0);}
+      100%{transform: translateX(calc(-250px * 9));}
+    }
+
+    .slide{
+      height: 200px;
+      width: 250px;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      perspective: 100%;
+    }
+
+    img{
+      width: 100%;
+      transition: transform 1s;
+    }
+
+    img:hover{
+      transform: scale(1.1);
+    }
+
+    .slider::before, .slider::after{
+      background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255, 255, 255,0) 100%);
+      content: '';
+      height: 100%;
+      position: absolute;
+      width: 15%;
+      z-index: 2;
+    }
+
+    .slider::before{
+      left: 0;
+      top: 0;
+    }
+
+    .slider::after{
+      right: 0;
+      top: 0;
+      transform: rotateZ(180deg);
+    }
+
+  /* Add this CSS to make the slider responsive */
+@media (max-width: 768px) {
+  .slider {
+    height: auto;
+    width: 100%;
+  }
+
+  .slide-track {
+    width: auto;
+    animation: scroll 60s linear infinite;
+  }
+
+  .slide-track:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 9)); }
+  }
+}
+
+
+  </style>
+</head>
+<body>
+<div class="slider">
+	<div class="slide-track">
+<!-------------------->
+		<div class="slide">
+			<img src="https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2023/02/19/1156396-shivaji.jpg?im=Resize=(1280,720)">
+		</div>
+          <!-------------------->
+       
+<!-------------------->
+		<div class="slide">
+			<img src="https://img.freepik.com/premium-vector/realistic-face-illustration-maharana-pratap_19856-15.jpg?w=2000">
+		</div>
+          <!-------------------->
+
+<!-------------------->
+		<div class="slide">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdNhS-3z-b0vGgzV8MM3PqNl4UBgYyHPw_TQ&usqp=CAU">
+		</div>
+          <!-------------------->
+
+<!-------------------->
+		<div class="slide">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvMs8njtALE7WPRTjehzRL_4LcP1iHoqxKig&usqp=CAU">
+		</div>
+          <!-------------------->
+
+<!-------------------->
+		<div class="slide">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLTci1iwVEL2fT99-sTsrb5Bs2MUubXTyyjQ&usqp=CAU">
+		</div>
+          <!-------------------->
+
+<!-------------------->
+		<div class="slide">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5GYGPl9b5qPGEfgNc9cEofQ2nWt3x-GiZ2w&usqp=CAU">
+		</div>
+          <!-------------------->
+
+
+<!-------------------->
+		<div class="slide">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyqFbVDcO65G7SPclotaOt9ov43KcFk9MIEA&usqp=CAU">
+		</div>
+          <!-------------------->
+
+<!-------------------->
+		<div class="slide">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPLwo68Zoc5mprYgubnyPlHpq6cIMaJMdNtxtRe0rI8rsYk9k1AAKNkJSc34vnD1JrBg&usqp=CAU">
+		</div>
+          <!-------------------->
+
+<!-------------------->
+		<div class="slide">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMBVEwrfZFbWE_fBexL8ymtlROTU-2bYKKJw&usqp=CAU">
+		</div>
+          <!-------------------->
+<!-------------------->
+		<div class="slide">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjuDMpR_FMxIBANxGWnFVsnheoZv40IKjAvQ&usqp=CAU">
+		</div>
+          <!-------------------->
+       
+<!-------------------->
+		<div class="slide">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBSgniqOkr07qg9hIHgPZTWkhLnpv8uDP99A&usqp=CAU">
+		</div>
+          <!-------------------->
+
+<!-------------------->
+		<div class="slide">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS92eisuWOx3tEjeW14mT9ACVgXDwIRBGtnww&usqp=CAU">
+		</div>
+          <!-------------------->
+
+<!-------------------->
+		<div class="slide">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO1DnodI_U1ZC6LRp3TsVYK04cIYryKMK6uQ&usqp=CAU">
+		</div>
+          <!-------------------->
+
+<!-------------------->
+		<div class="slide">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjYFV-bwRLTx5vbXeIRyRZDH86KNG-4ktGcg&usqp=CAU">
+		</div>
+          <!-------------------->
+
+<!-------------------->
+		<div class="slide">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_PpglWwhfiOtyCrSGnn8q-esqIVe8CROgmsVGSWpfyEq329-CMOA5_5-cvFlP4DI4Qio&usqp=CAU">
+		</div>
+          <!-------------------->
+
+
+<!-------------------->
+		<div class="slide">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPDUibkmnXYtjnA5mTU0EHwUnFItK4z0u49Q&usqp=CAU">
+		</div>
+          <!-------------------->
+
+<!-------------------->
+		<div class="slide">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeg6OfqNJSXwplG-i3qSd4ULSZr49NX_nmyA&usqp=CAU">
+		</div>
+          <!-------------------->
+
+<!-------------------->
+		<div class="slide">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdqXU4a-8gZ82NZs7OEqrhMjFoa1oA8IqdHA&usqp=CAU">
+		</div>
+          <!-------------------->
+
+	</div>
+</div>
+<script type="text/javascript">
+	// Replace the existing JavaScript code with this modified code
+var slides = document.querySelectorAll('.slide');
+var currentSlide = 0;
+var interval;
+
+function nextSlide() {
+  slides[currentSlide].classList.remove('active');
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].classList.add('active');
+}
+
+function startSlideShow() {
+  if (window.innerWidth > 768) {
+    interval = setInterval(nextSlide, 3000);
+  }
+}
+
+function stopSlideShow() {
+  clearInterval(interval);
+}
+
+// Add event listeners for touch and mouse events
+document.querySelector('.slide-track').addEventListener('mouseover', stopSlideShow);
+document.querySelector('.slide-track').addEventListener('touchstart', stopSlideShow);
+
+document.querySelector('.slide-track').addEventListener('mouseout', startSlideShow);
+document.querySelector('.slide-track').addEventListener('touchend', startSlideShow);
+
+window.addEventListener('load', startSlideShow);
+window.addEventListener('resize', startSlideShow);
+
+
+</script>
+</body>
+</html>
